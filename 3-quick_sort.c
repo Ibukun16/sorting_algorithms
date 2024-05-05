@@ -67,27 +67,27 @@ int lomuto_partition(int *array, int lo, int hi, size_t size)
 			u++;
 			if (u != v)
 			{
-				swap(&array[u], &array[v]);
+				swap_it(&array[u], &array[v]);
 				print_array(array, size);
 			}
 		}
 	}
 	if (u > pivot)
 	{
-		swap(&array[u], &pivot);
+		swap_it(&array[u], &pivot);
 		print_array(array, size);
 	}
 	return (u);
 }
 
 /**
- * swap - A function that swap position of two integers in an array.
+ * swap_it - A function that swap position of two integers in an array.
  * @i: First integer to swap
  * @j: Second integer to swap
  *
  * Return: void.
  */
-void swap(int *i, int *j)
+void swap_it(int *i, int *j)
 {
 	int temp;
 
