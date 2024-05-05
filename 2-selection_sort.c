@@ -6,6 +6,8 @@
  * @array: The array to be sorted
  * @size: The size of the array.
  *
+ * Description: Print the array after each swap
+ *
  * Return: Nothing
  */
 void selection_sort(int *array, size_t size)

@@ -2,9 +2,11 @@
 
 /**
  * bubble_sort - A function that sort an array in ascending
- *	order mimicking Bubble sort algorithm.
- * @array: The array containing the integers to be sorted
- * @size: The size of the array
+ * order mimicking Bubble sort algorithm.
+ * @array: The array containing the integers to be sorted.
+ * @size: The size of the array.
+ *
+ * Description: Print the list after each swap
  *
  * Return: Nothing.
  */

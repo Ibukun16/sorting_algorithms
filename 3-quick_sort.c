@@ -34,7 +34,7 @@ void lomuto_sort(int *array, int lo, int hi, size_t size)
 {
 	int p;
 
-	if(lo < hi)
+	if (lo < hi)
 	{
 		p = lomuto_partition(array, lo, hi, size);
 		lomuto_sort(array, lo, p - 1, size);
