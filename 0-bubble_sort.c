@@ -13,6 +13,7 @@
 void bubble_sort(int *array, size_t size)
 {
 	size_t x, y;
+	int temp;
 
 	if (array == NULL || size < 2)
 		return;
@@ -23,27 +24,11 @@ void bubble_sort(int *array, size_t size)
 		{
 			if (array[y] > array[y + 1])
 			{
-				swap_it(array + y, array + y + 1);
+				temp = array[y];
+				array[y] = array[y + 1];
+				array[y + 1] = temp;
 				print_array(array, size);
 			}
 		}
 	}
-}
-
-/**
- * swap_it - A function that swap the position of two integers
- * @i: First element to swap
- * @j: Second element to swap
- *
- * Description: Swap the two integers given.
- *
- * Return: Void
- */
-void swap_it(int *i, int *j)
-{
-	int temp;
-
-	temp = *i;
-	*i = *j;
-	*j = temp;
 }
