@@ -8,7 +8,7 @@
  *
  * Description: Implement the Lomuto partition scheme. Pivot should
  *	always be the last element of the partition being sorted
- *	Print the array after each swap.
+ *	Print the list after each swap.
  *
  * Return: Nothing.
  */
@@ -27,6 +27,8 @@ void quick_sort(int *array, size_t size)
  * @hi: The highest index of the array
  * @lo: The lowest index of the array
  * @size: The size of the array
+ *
+ * Description: Implement the lomuto partition scheme
  *
  * Return: Void.
  */
@@ -48,6 +50,8 @@ void lomuto_sort(int *array, int lo, int hi, size_t size)
  * @lo: The lowest index of the array
  * @hi: The highest index of the array
  * @size: The size of the array
+ *
+ * Description: The lomuto partition uses a pivot point
  *
  * Return: Index of the pivot element in the array.
  */
