@@ -50,6 +50,11 @@ void shell_sort(int *array, size_t size);
 void cocktail_sort_list(listint_t **list);
 void swap_front_node(listint_t **head, listint_t **tail, listint_t **shaker);
 void swap_back_node(listint_t **head, listint_t **tail, listint_t **shaker);
+void counting_sort(int *array, size_t size);
+int find_max(int *array, int size);
+void merge_sort(int *array, size_t size);
+void merge_sub(int *ar_inarr, int *b, size_t front, size_t middle, size_t rear);
+void recursive_merge_sort(int *ar_inarr, int *tmp, size_t front, size_t back);
 
 #endif /** SORT_HEADER **/
 
